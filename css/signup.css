@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* {box-sizing: border-box;}*/
+
+
+
+
+
+/* Styles of the form */
+
+
+
+h1 {
+  margin-left: 70px;
+  }
+  form li {
+  list-style: none;
+  margin-bottom: 5px;
+  }
+  
+  form ul li label{
+  float: left;
+  clear: left;
+  width: 100px;
+  text-align: right;
+  margin-right: 10px;
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+  font-size:14px;
+  }
+  
+  form ul li input, select, span {
+  float: left;
+  margin-bottom: 10px;
+  }
+  
+  form textarea {
+  float: left;
+  width: 350px;
+  height: 150px;
+  }
+  
+  
+  
+  p {
+  margin-left: 70px;
+  font-weight: bold;
+  }
+  input[type=text], input[type=password] {
+    width: 60%;
+    padding: 5px;
+    margin: 5px 0 10px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  [type="submit"]{
+    background-color: gold;
+    color: purple;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+    opacity: 0.9;
+  }
+  [type="submit"] {
+  clear: both;
+  margin: 20px 0 0 230px;
+  font-size:18px
+  }
+
+  
+  
+  
+ 
