@@ -1,0 +1,177 @@
+@charset "utf-8";
+@font-face {
+    font-family: Arial, Helvetica, sans-serif;
+    src: url();
+}
+
+
+/*
+
+    Name: Brandon Broussard
+    Date: 11/01/2022
+
+    about: document containing the style for everything in the body of the page including the workout tips
+    drop down bar
+
+*/
+
+ /* for the base of all html code. just setting colors */
+html{
+    background-color: rgb(166, 145, 236);
+    color: white;
+ }
+
+ /* adding background image to the page and organizing the basic fonts used and its size */
+body{
+    background-image:url("Female-Leaning-Showing-Abs.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    margin: 0;
+    font-size: 25px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    /* the style for the workout button */
+.nav {
+    float: right;
+    overflow: hidden;
+    background-color: purple;
+    font-size: 15px;
+    width: 10em;
+}
+
+    /* the style for the text in the dropdown menu*/
+.nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+    /* activates when the button is hovered over */
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+    /* makes the dropdown box gold when hovering over "workut tips" */
+.nav a.active {
+    background-color: gold;
+    color: white;
+}
+    /*sets up the style for the subnavigation */
+.subnavigation {
+    float: left;
+    overflow: hidden;
+}
+    /* stylizes everything in the button like the workout text*/
+.subnavigation .dropDown {
+    font-size: 20px;
+    border: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0;
+}
+    /* causes the workout background to go from purple to grey*/
+.navbar a:hover, .subnavigation:hover .dropDown {
+    background-color: grey;
+}
+  
+    /* styles the inside of the dropdown box*/
+.dropDownContent {
+    display: none;
+    position: absolute;
+    background-color: gold;
+    width: 10em;
+}
+    /* the text inside of the dropdown menu */
+.dropDownContent a {
+    color: white;
+    text-decoration: none;
+}
+    /* changes what happens when you hover over a tip in the drop down box */
+.dropDownContent a:hover {
+    background-color: #eee;
+    color: black;
+}
+  
+    /* how it is displayed when hovering over something in the dropdown box*/
+.subnavigation:hover .dropDownContent {
+    display: block;
+}
+
+    /* style for all h1 text */
+h1{
+    color: white;
+    text-align: center;
+}
+    /* style for all p text*/
+p{
+    text-align: center;
+    font-size: larger;
+}
+    /* style for all h2 text */
+h2{
+    text-align: center;
+}
+    /* changes the style for information bellow the about h1*/
+#aboutText{
+    margin: 5em;
+}
+    /* changes the style for the h2 team header */
+#Team{
+    text-align: left;
+    padding-top: 2em;
+    text-align: center;
+    text-decoration: none;
+}
+    /* changes the style for the container of the members list*/
+div.MemberList{
+    text-align: center;
+}
+    /* changes the style for all the text inside the members list */
+#Members{
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+}
+    /* changes the style for the h2 hours text */
+#Hours{
+    padding-top: 2em;
+    text-align: center;
+}
+    /* changes the style for the hours of operation */
+#Operations{
+    padding-bottom: 2em;
+    text-align: center;
+    text-decoration: none;
+}
+    /* changes the style for the h2 location text */
+#Location{
+    padding-top: 2em;
+}
+    /* changes the style for the address text bellow the h2 location */
+#address{
+    padding-bottom: 2em;
+}
+    /* changes all the style for all list items */
+ul{
+    font-size: large;
+    text-decoration-style: wavy;
+    padding-bottom: 2em;
+}
+    /* changes the style for the open google maps button */
+#buttonOpen {
+    border: 3px solid green;
+    position: relative;
+}
+    /* changes the style for the close google maps */
+#buttonClose {
+    border: 3px solid rgb(146, 0, 0);
+    position: relative;
+  }

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitNFit Club Fitness</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/features.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <style>
+        html {
+            font-size: 62.5%;
+            scroll-behavior: smooth;
+            scroll-padding-top: 5rem;
+            overflow-x: hidden;
+        }
+
+        html::-webkit-scrollbar {
+            width: 1rem;
+        }
+
+        html::-webkit-scrollbar-track {
+            background: #fff;
+        }
+
+        html::-webkit-scrollbar-thumb {
+            background: yellow;
+        }
+
+        body {
+            background: #fff;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--Header section-->
+    <header>
+        <div class="header" width="2000" style=" position: sticky; top:0; right:0;">
+          <a href="#" ><img  class="container__image" width="145"  src="images/logo-removebg-preview.png"></a>
+          
+          <div class="header-right">
+            <a href="index.html" style="font-size: 25px; padding: 6px;">Home</a>
+            
+            
+            <a href="aboutMe.html" style="font-size: 25px; padding: 6px;">About </a>
+            <a href="features.html" style="font-size: 25px; padding: 6px;">Features</a>
+            <!---<a Sub navigation button in the header </a>-->
+            <div class="subnav">
+              <a class="subnavbtn" style="font-size: 25px; padding: 6px; color: black;">My Account</a>
+              <div class="subnav-content">
+                <a href="signup.html" style="font-size: 25px; padding: 6px; color:black">Create account</a>
+                <a onclick="document.getElementById('id01').style.display='block'"style="font-size: 25px; padding: 6px;">Login</a>
+              </div>
+            </div> 
+              
+      
+          </div>
+        </div>
+      
+          <!-- pop up login button -->
+        <div id="id01" class="modal">
+            
+          <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <img src="images/icon.png" alt="Avatar" class="avatar">
+              </div>
+            
+              <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+            
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+                
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+              </div>
+            
+              <div class="container" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <span class="psw"><a href="#">Forgot password?</a></span>
+              <span class="signup" ><a href="signup.html">Signup here</a></span>
+              </div>
+      
+          </form>
+        </div>
+      </header>
+    
+    
+    <!--Header section end-->
+
+    <!-- home section starts  -->
+ 
+<section class="feature-head">
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+    </section>
+    
+
+    <section class="home" id="home">
+
+        <div class="swiper home-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide" style="background: url(images/home-bg-1.jpg) no-repeat;">
+                    <div class="content">
+                        <span>be strong, be fit</span>
+                        <h3>Make yourself stronger than your excuses.</h3>
+                        <a href="#" class="btn">get started</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide" style="background: url(images/home-bg-2.jpg) no-repeat;">
+                    <div class="content">
+                        <span>be strong, be fit</span>
+                        <h3>Make yourself stronger than your excuses.</h3>
+                        <a href="#" class="btn">get started</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide" style="background: url(images/home-bg-3.jpg) no-repeat;">
+                    <div class="content">
+                        <span>be strong, be fit</span>
+                        <h3>Make yourself stronger than your excuses.</h3>
+                        <a href="#" class="btn">get started</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+
+        <div class="image">
+            <img src="images/about-img.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <span>Welcome to FitNFit</span>
+            <h3 class="title">Every thing you could ask for in a gym</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione quia accusamus dicta inventore nobis
+                obcaecati vero odio, id dolorum. Consequatur ex, aperiam deserunt nostrum perferendis illum unde ipsa?
+                Consequatur, distinctio?</p>
+            <div class="box-container">
+                <div class="box">
+                    <h3><i class="fas fa-check"></i>training ability</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim.</p>
+                </div>
+                <div class="box">
+                    <h3><i class="fas fa-check"></i>equipment and space</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim.</p>
+                </div>
+                <div class="box">
+                    <h3><i class="fas fa-check"></i>clean and hygienic</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim.</p>
+                </div>
+                <div class="box">
+                    <h3><i class="fas fa-check"></i>community and socializing</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim.</p>
+                </div>
+            </div>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- features section starts  -->
+
+    <section class="features" id="features">
+
+        <h1 class="heading"> <span>gym features</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/f-img-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <img src="images/icon-1.png" alt="">
+                    <h3>body building</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, atque.</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="box second">
+                <div class="image">
+                    <img src="images/f-img-2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <img src="images/icon-2.png" alt="">
+                    <h3>Crossfit</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, atque.</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/f-img-3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <img src="images/icon-3.png" alt="">
+                    <h3>Cardio enthusiast</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, atque.</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- features section ends -->
+
+    <!-- pricing section starts  -->
+
+    <section class="pricing" id="pricing">
+
+        <div class="information">
+            <span>pricing plan</span>
+            <h3>affordable pricing plan for your</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam dolore excepturi ea suscipit fugiat cum
+                quae, rerum optio mollitia! Tempora?</p>
+            <p> <i class="fas fa-check"></i> cardio exercise </p>
+            <p> <i class="fas fa-check"></i> weight lifting </p>
+            <p> <i class="fas fa-check"></i> diet plans </p>
+            <p> <i class="fas fa-check"></i> overall results </p>
+            <a href="#" class="btn">all pricing</a>
+        </div>
+
+        <div class="plan basic">
+            <h3>basic plan</h3>
+            <div class="price"><span>$</span>30<span>/mo</span></div>
+            <div class="list">
+                <p> <i class="fas fa-check"></i> personal training </p>
+                <p> <i class="fas fa-check"></i> cardio exercise </p>
+                <p> <i class="fas fa-check"></i> weight lifting </p>
+                <p> <i class="fas fa-check"></i> diet plans </p>
+                <p> <i class="fas fa-check"></i> overall results </p>
+            </div>
+            <a href="#" class="btn">get started</a>
+        </div>
+
+        <div class="plan">
+            <h3>premium plan</h3>
+            <div class="price"><span>$</span>90<span>/mo</span></div>
+            <div class="list">
+                <p> <i class="fas fa-check"></i> personal training </p>
+                <p> <i class="fas fa-check"></i> cardio exercise </p>
+                <p> <i class="fas fa-check"></i> weight lifting </p>
+                <p> <i class="fas fa-check"></i> diet plans </p>
+                <p> <i class="fas fa-check"></i> overall results </p>
+            </div>
+            <a href="#" class="btn">get started</a>
+        </div>
+
+    </section>
+
+    <!-- pricing section ends -->
+
+    <!-- trainers section starts  -->
+
+    <section class="trainers" id="trainers">
+
+        <h1 class="heading"> <span>expert trainers</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/trainer-1.jpg" alt="">
+                <div class="content">
+                    <span>expert trainer</span>
+                    <h3>john doe</h3>
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-pinterest"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/trainer-2.jpg" alt="">
+                <div class="content">
+                    <span>expert trainer</span>
+                    <h3>jane doe</h3>
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-pinterest"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/trainer-3.jpg" alt="">
+                <div class="content">
+                    <span>expert trainer</span>
+                    <h3>john doe</h3>
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-pinterest"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/trainer-4.jpg" alt="">
+                <div class="content">
+                    <span>expert trainer</span>
+                    <h3>jane doe</h3>
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-pinterest"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- trainers section ends -->
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/features.js"></script>
+
+    <!--jquery code-->
+    <script>
+        $(document).ready(function () {
+            $(".about").hover(function () {
+                $(this).css("background", "purple");
+            },
+                function () {
+                    $(this).css("background", "#FFF");
+                });
+        });
+    </script>
+
+    <!--Footer section-->
+    <footer>
+        <div class="footer">
+
+            <a href="#" class="top">&#8593;&nbsp;&nbsp;BACK TO TOP</a>
+
+            <div class="row">
+
+                <div class="row">
+                    <ul>
+                        <li><a href="#">
+                                <h1> Find a Club</h1>
+                            </a></li>
+                        <li><a href="#">
+                                <h1>About FitNFit Club Fitness</h1>
+                            </a></li>
+                        <li><a href="#">
+                                <h1>Memberships</h1>
+                            </a></li>
+                        <li><a href="#">
+                                <h1>Community</h1>
+                            </a></li>
+                    </ul>
+                </div>
+
+
+                <hr>
+                <br>
+
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+
+            <div class="row">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Site Map</a></li>
+                </ul>
+            </div>
+
+            <div class="row">
+                FitNFit Club Fitness Copyright © 2021 FitNFit Club Fitness - All rights reserved
+            </div>
+        </div>
+    </footer>
+    <!--Footer sectioon ends-->
+
+</body>
+
+</html>

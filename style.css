@@ -1,0 +1,16 @@
+.container-section{	
+		
+		padding: 130px 40px 40px;
+		max-width: 1000px;
+		display: flex;
+		&__image {
+		padding: 20px 40px 40px;
+		margin: 200px 300px 0 0;
+		width: 500px;
+		object-fit: contain;
+		align-self: flex-start;
+		}
+		&__text {
+		flex: 1 1 auto;
+		}
+	}

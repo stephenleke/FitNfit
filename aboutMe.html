@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <!--
+
+    Name: Brandon Broussard
+    Date: 11/01/2022
+
+    about: html code and jquery and javascript code found here.
+
+    -->
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        
+        <!--Style Sheet for The Body-->
+        <link rel="stylesheet" href="aboutMeStyle.css">
+        <!--src In order to use Jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <title>FitNFit Club Fitness</title> 
+        <!--HEADER-->
+        <link href=" css/header.css" rel=" stylesheet" />
+        
+        <!--FOOTER-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href=" css/footer.css" rel=" stylesheet" />
+
+
+        <script>
+                //code for showing the google map
+            $(document).ready(function(){
+                $("#buttonOpen").click(function(){
+                $("#GoogleMap").show();
+                });
+            });
+                //code for hiding the google map
+            $(document).ready(function(){
+                $("#buttonClose").click(function(){
+                $("#GoogleMap").hide();
+                });
+            });
+                //function for changing the background picture to a female
+            function changePictureFemale(){
+                document.body.style.backgroundImage = "url('Female-Leaning-Showing-Abs.webp')";
+            }
+                //function for changing the background picture to a male
+            function changePictureMale(){
+                document.body.style.backgroundImage = "url('bodybuilding-tips.jpg')";
+            }
+           
+        </script>
+
+
+    </head>
+    <body>
+        <header>
+                <!--HEADER HTML CODE-->
+            <div class="header" width="2000" style=" position: sticky; top:0; right:0;">
+                <a href="index.html" ><img  class="container__image" width="145"  src="images/logo-removebg-preview.png"></a>
+                
+                <div class="header-right">
+                    <a href="index.html" style="font-size: 25px; padding: 6px;">Home</a>
+                    
+                    
+                    <a href="#" style="font-size: 25px; padding: 6px;">About </a>
+                    <a href="features.html" style="font-size: 25px; padding: 6px;">Features</a>
+                    <!---<a Sub navigation button in the header </a>-->
+                    <div class="subnav">
+                        <a class="subnavbtn" style="font-size: 25px; padding: 6px; color: black;">My Account</a>
+                        <div class="subnav-content">
+                          <a href="signup.html" style="font-size: 25px; padding: 6px; color:black">Create account</a>
+                          <a onclick="document.getElementById('id01').style.display='block'"style="font-size: 25px; padding: 6px;">Login</a>
+                        </div>
+                    </div> 
+                      
+        
+                </div>
+            </div>
+        
+                <!-- pop up login button -->
+            <div id="id01" class="modal">
+              
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                      <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <img src="images/icon.png" alt="Avatar" class="avatar">
+                      </div>
+                  
+                      <div class="container">
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+                  
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                          
+                        <button type="submit">Login</button>
+                        <label>
+                          <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                      </div>
+                  
+                      <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        <span class="psw"><a href="#">Forgot password?</a></span>
+                        <span class="signup" ><a href="signup.html">Signup here</a></span>
+                      </div>
+        
+                </form>
+            </div>
+
+            <!-- Un-used Code For Header That I, Brandon, made
+            <div class="nav">
+                <ul id="links">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="news.asp">Images</a></li>
+                    <li><a class="active" href="aboutMe.html">About</a></li>
+                </ul>
+           
+
+            -->
+
+        </header>
+
+            <!--Dropdown button for the Workout Tips directly bellow the header-->
+        <div class="nav">
+            <div class="subnavigation">
+
+                <button class="dropDown">Workout Tips<i class="fa fa-caret-down"></i></button>
+                <div class="dropDownContent">
+                    <a href="https://www.self.com/story/workout-tips">Tips 1</a>
+                    <a href="https://www.muscleandfitness.com/workouts/workout-tips/25-expert-tips-improve-workout/">
+                        Tips 2</a>
+                    <a href="https://www.sweat.com/blogs/fitness/workout-tips">
+                        Tips 3</a>
+                    <a href="https://central.gymshark.com/article/5-tips-for-a-better-home-workout">
+                        Tips 4</a>
+                </div>
+            </div>
+        </div>
+        
+        <style type="text/css">
+            #links{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+            <!--The first section of the about me listing off a thank you message.-->
+        <h1>About Me</h1>
+        <p id="aboutText">
+            We would like to thank <b>Paul Wattson</b> for his dedication
+            and support towards the production of the webpage as well as 
+            his help in regards to the building of our first fitness center
+        </p>
+            <!--List of team members working currently-->
+        <h2 id="Team">Our Team</h2>
+        <div class="MemberList">
+            <ul id="Members">
+                <li><b>Organization Head</b>: John Dad</li>
+                <li><b>Chief Instructor</b>: Ligma Jones</li>
+                <li><b>Lead Team Member</b>: Watcon Paul</li>
+                <li><b>Team Member</b>: Hoggy Tim</li>
+                <li><b>Team Member</b>: Bobby Hill</li>
+                <li><b>Team Member</b>: Dom Long</li>
+                <li><b>and the ever popular</b>: <i>lil</i> Bob</li>
+            </ul>
+        </div>
+            <!--Shows the hours of operation-->
+        <h2 id="Hours">Hours Of Operation</h2>
+        <p id="Operations">Monday-Sunday: 24/7</p>
+            <!--Shows our location and where to find us-->
+        <h2 id="Location">Location</h2>
+        <p id="Address">
+            1901 Ruth St, Sulphur, LA 70663
+        </p>
+            <!--buttons for opening and closing the google map-->
+        <button id="buttonOpen">Click To Open Google Maps</button>
+        <button id="buttonClose">Click To Close Google Maps</button>
+            <!--The google map -->
+        <iframe id="GoogleMap"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110321.94234821209!2d-93.5173416137695!3d30.22108331113543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x863b8c63244b1fa9%3A0x44b1aa8209d8eecd!2sPlanet%20Fitness!5e0!3m2!1sen!2sus!4v1667348103129!5m2!1sen!2sus" 
+        width="1460" 
+        height="600" 
+        style="
+        border: 2px;
+
+        "
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <!-- The buttons for changing the background picture-->
+        <button type="button" onclick="changePictureFemale()">Change background to Female</button>
+        <button type="button" onclick="changePictureMale()">Change background to Male</button>
+
+
+        <footer>    <!--The information contained in the footer-->
+            <div class="footer">
+                
+                <a href="#" class="top" >&#8593;&nbsp;&nbsp;BACK TO TOP</a>
+                
+                    <!-- list of helpful helpful information-->
+                <div class="row">
+                <div class="row">
+                    <ul>    
+                        <li><a href="#"><h1> Find a Club</h1></a></li>
+                        <li><a href="#"><h1>About FitNFit Club Fitness</h1></a></li>
+                        <li><a href="#"><h1>Memberships</h1></a></li>
+                        <li><a href="#"><h1>Community</h1></a></li>
+                    </ul>
+                </div>
+        
+        
+                <hr>
+                <br>
+                        <!--social media pictures-->
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+                    <!--list of more helpful information and possible answeres to questions one might have-->
+                <div class="row">
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Site Map</a></li>
+                    </ul>
+                </div>
+                    <!--Copyright-->
+                <div class="row">
+                    FitNFit Club Fitness Copyright © 2021 FitNFit Club Fitness - All rights reserved 
+                </div>
+            </div>
+        </footer> 
+        
+        
+    </body>
+</html>

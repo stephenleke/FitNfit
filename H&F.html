@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <title>FitNFit Club Fitness</title> 
+	<!--HEADER--><link href=" header.css" rel=" stylesheet" />
+	
+	<!--MAIN/BODY-->
+	<link href=" slider.css" rel=" stylesheet" />
+	<link href=" style.css" rel=" stylesheet" />
+	
+	<!--FOOTER-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+	<link href=" footer.css" rel=" stylesheet" />
+</head>
+<body> 
+
+<header>
+	<div class="header" width="2000" style=" position: sticky; top:0; right:0;">
+		<a href="index.html" ><img  class="container__image" width="145"  src="logo-removebg-preview.png"></a>
+		
+		<div class="header-right">
+			<a href="#" style="font-size: 25px; padding: 6px;">Home</a>
+			
+			
+			<a href="#" style="font-size: 25px; padding: 6px;">About </a>
+			<a href="#" style="font-size: 25px; padding: 6px;">Features</a>
+			<!---<a Sub navigation button in the header </a>-->
+			<div class="subnav">
+				<a class="subnavbtn" style="font-size: 25px; padding: 6px; color: black;">My Account</a>
+				<div class="subnav-content">
+				  <a href="signup.html" style="font-size: 25px; padding: 6px; color:black">Create account</a>
+				  <a onclick="document.getElementById('id01').style.display='block'"style="font-size: 25px; padding: 6px;">Login</a>
+				</div>
+			</div> 
+			  
+
+		</div>
+	</div>
+
+		<!-- pop up login button -->
+	<div id="id01" class="modal">
+      
+		<form class="modal-content animate" action="/action_page.php" method="post">
+			  <div class="imgcontainer">
+				<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+				<img src="src/icon.png" alt="Avatar" class="avatar">
+			  </div>
+		  
+			  <div class="container">
+				<label for="uname"><b>Username</b></label>
+				<input type="text" placeholder="Enter Username" name="uname" required>
+		  
+				<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw" required>
+				  
+				<button type="submit">Login</button>
+				<label>
+				  <input type="checkbox" checked="checked" name="remember"> Remember me
+				</label>
+			  </div>
+		  
+			  <div class="container" style="background-color:#f1f1f1">
+				<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+				<span class="psw"><a href="#">Forgot password?</a></span>
+				<span class="signup" ><a href="signup.html">Signup here</a></span>
+			  </div>
+
+		</form>
+	</div>
+</header>
+
+
+	
+<footer>
+	<div class="footer">
+		
+		<a href="#" class="top" >&#8593;&nbsp;&nbsp;BACK TO TOP</a>
+		
+		<div class="row">
+		
+		<div class="row">
+			<ul>
+				<li><a href="#"><h1> Find a Club</h1></a></li>
+				<li><a href="#"><h1>About FitNFit Club Fitness</h1></a></li>
+				<li><a href="#"><h1>Memberships</h1></a></li>
+				<li><a href="#"><h1>Community</h1></a></li>
+			</ul>
+		</div>
+
+
+		<hr>
+		<br>
+
+			<a href="#"><i class="fa fa-facebook"></i></a>
+			<a href="#"><i class="fa fa-instagram"></i></a>
+			<a href="#"><i class="fa fa-youtube"></i></a>
+			<a href="#"><i class="fa fa-twitter"></i></a>
+		</div>
+
+		<div class="row">
+			<ul>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="#">Terms & Conditions</a></li>
+				<li><a href="#">Our Services</a></li>
+				<li><a href="#">Investor Relations</a></li>
+				<li><a href="#">Site Map</a></li>
+			</ul>
+		</div>
+
+		<div class="row">
+			FitNFit Club Fitness Copyright © 2021 FitNFit Club Fitness - All rights reserved 
+		</div>
+	</div>
+</footer> 
+
+  
+</html>

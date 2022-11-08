@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <title>FitNFit Club Fitness</title> 
+	<!--HEADER-->
+    <link href=" css/header.css" rel=" stylesheet" />
+	
+	<!--MAIN/BODY-->
+	<link href=" slider.css" rel=" stylesheet" />
+	<link href=" style.css" rel=" stylesheet" />
+	
+	<!--FOOTER-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+	<link href=" css/footer.css" rel=" stylesheet" />
+	<header>
+        <div class="header" width="2000" style=" position: sticky; top:0; right:0;">
+          <a href="#" ><img  class="container__image" width="145"  src="images/logo-removebg-preview.png"></a>
+          
+          <div class="header-right">
+            <a href="#" style="font-size: 25px; padding: 6px;">Home</a>
+            
+            
+            <a href="aboutMe.html" style="font-size: 25px; padding: 6px;">About </a>
+            <a href="features.html" style="font-size: 25px; padding: 6px;">Features</a>
+            <!---<a Sub navigation button in the header </a>-->
+            <div class="subnav">
+              <a class="subnavbtn" style="font-size: 25px; padding: 6px; color: black;">My Account</a>
+              <div class="subnav-content">
+                <a href="signup.html" style="font-size: 25px; padding: 6px; color:black">Create account</a>
+                <a onclick="document.getElementById('id01').style.display='block'"style="font-size: 25px; padding: 6px;">Login</a>
+              </div>
+            </div> 
+              
+      
+          </div>
+        </div>
+      
+          <!-- pop up login button -->
+        <div id="id01" class="modal">
+            
+          <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <img src="images/icon.png" alt="Avatar" class="avatar">
+              </div>
+            
+              <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+            
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+                
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+              </div>
+            
+              <div class="container" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <span class="psw"><a href="#">Forgot password?</a></span>
+              <span class="signup" ><a href="signup.html">Signup here</a></span>
+              </div>
+      
+          </form>
+        </div>
+      </header>
+	
+</head>
+
+<body> 
+
+	
+
+	
+   
+    <center>
+
+	
+	<!-- Slideshow  -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<div class="slideshow-container" >
+		<div class="mySlides fade" >
+        <div class="numbertext">1 / 3</div>
+        <img src="s1.jpg" style="width:100%">
+        <div class="text" >Welcome to FitNFit Club</div>
+        </div>
+		<div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="s2.jpg" style="width:100%">
+        <div class="text" >Start Today !</div>
+        </div>
+        <div class="mySlides fade">
+           <div class="numbertext">3 / 3</div>
+           <img src="s3.jpg" style="width:100%">
+           <div class="text" >Join Us</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+		<span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+		function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+    function currentSlide(n) {
+		showSlides(slideIndex = n);
+    }
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+           dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+    </script>
+	<!-- Slideshow end -->
+	
+   
+	
+	<section>
+	
+	<div class="container-section">
+		<img class="container__image" width="520" style="padding: 40px 60px 60px" src="1.jpg">
+		<div class="container__text">
+			<h2> WELCOME TO JOIN OUR FAMILY</h2>
+			<p>Gym confidently in our Well Health Safety Rated clubs</p>
+			<p>You’ll soon find a Well Health Safety Seal on the front door of every FitNFit Club. 
+			Backed by science and evaluated by third-party experts, this seal means you can run, curl, lift,
+			squat, press, walk and gym confidently in the Clean Thumb Club™</p>
+			<p><a href= "https://mtdata.ru/u7/photo53A0/20946911428-0/original.jpg#20946911428">&#8594 Learn More About Our Cleaning Procedures<br></a></p>
+			
+		</div>
+	</div>
+
+	<div class="container-section">
+		<img class="container__image" width="600" style="padding: 40px 60px 60px" src="2.jpeg">
+		<div class="container__text">
+			<h2>OUR MEMBERSHIP</h2>
+			<p>With the FitNFit membership, you can use any of our 1000+ locations, bring a guest for free 
+			as much as you want, and relax in the exclusive Black Card Spa!  Check out everything the PF Black Card® has to offer.</p>
+			<p><a href= "https://mtdata.ru/u7/photo53A0/20946911428-0/original.jpg#20946911428">&#8594 Learn More About the FitNFit Card®<br></a></p>
+		</div>
+	</div>
+	
+	<div class="container-section">
+		<img class="container__image" width="600" style="padding: 40px 60px 60px" src="3.jpg">
+		<div class="container__text">
+			<h2>BE READY BEFORE YOU START</h2>
+			<p>We have everything you need to start your fitness journey from bags, outfits, locker room essentials 
+			and more, all at low costs! Check out our store.</p>
+			<p><a href= "https://mtdata.ru/u7/photo53A0/20946911428-0/original.jpg#20946911428">&#8594 Shop Now<br></a></p>
+		</div>
+	</div>
+	
+	<div class="container-section">
+		<img class="container__image" width="600" style="padding: 40px 60px 60px" src="4.jpg">
+		<div class="container__text">
+			<p>See what FitNFit is all about!</p>
+			<h2>TAKE ONLINE COURSE NOW!</h2>
+			<p>Join us on a online club tour around a FitNFit Fitness. You’ll learn all about the different
+			areas of the club and Teddy will show you how to get the most out of a membership and where you can start your fitness journey.</p>
+			<p><a href= "https://mtdata.ru/u7/photo53A0/20946911428-0/original.jpg#20946911428">&#8594 Watch the Club Tour!<br></a></p>
+		</div>
+	</div>
+	
+
+	
+	<div class="container-section">
+		<img class="container__image" width="600" style="padding: 40px 60px 60px" src="6.jpg">
+		<div class="container__text">
+			<p>FREE FOR EVERYONE!</p>
+			<h2>DOWNLOAD OUR APP FOR FREE WORKOUTS, CROWD METER, AND MORE!</h2>
+			<p>Want to keep moving while you're at home? The FitNFit Fitness App has hundreds of workout videos and tutorials, including 
+			exclusive training series, powered by iFit, FN trainers and special guests to keep you moving at home or in our clubs.</p>
+			<p>You can also access our Crowd Meter through the app to pick the best time to visit. It's just one of the many ways we’re 
+			doing our part to ensure you can Gym Confidently™. Plus even more features built to make fitness easy!</p>
+			<p><a href= "https://mtdata.ru/u7/photo53A0/20946911428-0/original.jpg#20946911428">&#8594 Learn More & Download the App!<br></a></p>
+		</div>
+	</div>
+	
+	<div class="container-section">
+		<img class="container__image" width="480" style="padding: 40px 60px 60px" src="7.jpg">
+		<div class="container__text">
+			
+			<h2>WELCOME TO THE CLEAN THUMB CLUB ™</h2>
+			<p>FitNFit Fitness is keeping our commitment to clean as we welcome you back. We’ve been doing our part to make our clean 
+			clubs even cleaner with Touchless Check-In, Cleaning Stations stocked with disinfectant spray, and practicing Social 
+			Fitnessing™ to give our members a little extra room.</p>
+			<p><a href= "https://mtdata.ru/u7/photo53A0/20946911428-0/original.jpg#20946911428">&#8594 Learn More About Our Cleaning Procedures<br></a></p>
+		</div>
+	</div>
+	
+
+	</section>
+
+</body>
+
+
+<footer>
+	<div class="footer">
+		
+		<a href="#" class="top" >&#8593;&nbsp;&nbsp;BACK TO TOP</a>
+		
+		<div class="row">
+		
+		<div class="row">
+			<ul>
+				<li><a href="#"><h1> Find a Club</h1></a></li>
+				<li><a href="#"><h1>About FitNFit Club Fitness</h1></a></li>
+				<li><a href="#"><h1>Memberships</h1></a></li>
+				<li><a href="#"><h1>Community</h1></a></li>
+			</ul>
+		</div>
+
+
+		<hr>
+		<br>
+
+			<a href="#"><i class="fa fa-facebook"></i></a>
+			<a href="#"><i class="fa fa-instagram"></i></a>
+			<a href="#"><i class="fa fa-youtube"></i></a>
+			<a href="#"><i class="fa fa-twitter"></i></a>
+		</div>
+
+		<div class="row">
+			<ul>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="#">Terms & Conditions</a></li>
+				<li><a href="#">Our Services</a></li>
+				<li><a href="#">Investor Relations</a></li>
+				<li><a href="#">Site Map</a></li>
+			</ul>
+		</div>
+
+		<div class="row">
+			FitNFit Club Fitness Copyright © 2021 FitNFit Club Fitness - All rights reserved 
+		</div>
+	</div>
+</footer>
+
+   
+</html>
